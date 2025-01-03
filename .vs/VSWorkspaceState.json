@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AM .UI.Console",
+    "\\AM .UI.Console\\bin",
+    "\\AM .UI.Console\\bin\\Debug",
+    "\\AM .UI.Console\\bin\\Release",
+    "\\AM .UI.Console\\obj",
+    "\\AM.Application.Core",
+    "\\AM.Application.Core\\bin",
+    "\\AM.Application.Core\\Domain",
+    "\\AM.Application.Core\\obj"
+  ],
+  "SelectedNode": "\\AirportManagement.sln",
+  "PreviewInSolutionExplorer": false
+}
