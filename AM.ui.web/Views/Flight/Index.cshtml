@@ -1,96 +1,103 @@
-﻿@model IEnumerable<AM.Application.Core.Domain.Flight>
+﻿@model IEnumerable<AM.ApplicationCore.Domain.Flight>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Flights Index";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <h1 class="mb-4 text-primary">Flights List</h1>
 
-<form asp-action="index">
-    <fieldset>
-        <legend> Recherche</legend>
-        Saisir une date de départ :
-        <input type="date" name="dateDepart" />
-        <input type="submit" value="Serach" />
-    </fieldset>
-</form>
-<form asp-action="Sort">
-    <fieldset>
-        <input type="submit" value="Sort" />
-    </fieldset>
-</form>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Destination)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Departure)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AirlineLogo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FlightId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FlightDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EffectiveArrival)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EstimatedDuration)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PlaneId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Pilot)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Destination)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Departure)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AirlineLogo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FlightId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FlightDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EffectiveArrival)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EstimatedDuration)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PlaneId)
-            </td>
-            <td>
-                    <img src="~\uploads\@item.Pilot" width="50" height="50"/>
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Form for Search -->
+    <form asp-action="index" class="mb-3">
+        <fieldset class="border p-3 rounded">
+            <legend class="w-auto px-3 text-secondary">Search Flights</legend>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="dateDepart" class="form-label">Departure Date</label>
+                </div>
+                <div class="col-auto">
+                    <input type="date" name="dateDepart" id="dateDepart" class="form-control" />
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- Form for Sort -->
+    <form asp-action="Sort" class="mb-4">
+        <fieldset class="border p-3 rounded">
+            <div class="row">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-warning">Sort Flights</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- Create New Button -->
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-success">Create New Flight</a>
+    </div>
+
+    <!-- Flights Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.AirlineLogo)</th>
+                    <th>@Html.DisplayNameFor(model => model.Destination)</th>
+                    <th>@Html.DisplayNameFor(model => model.Departure)</th>
+                    <th>@Html.DisplayNameFor(model => model.FlightId)</th>
+                    <th>@Html.DisplayNameFor(model => model.FlightDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.EffectiveArrival)</th>
+                    <th>@Html.DisplayNameFor(model => model.EstimatedDuration)</th>
+                    <th>@Html.DisplayNameFor(model => model.PlaneId)</th>
+                    <th>@Html.DisplayNameFor(model => model.Pilote)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AirlineLogo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Destination)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Departure)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FlightId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FlightDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EffectiveArrival)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EstimatedDuration)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlaneId)
+                        </td>
+                        <td>
+                            <img src="~/uploads/@item.Pilote" alt="Pilot" class="rounded-circle" width="50" height="50" />
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.FlightId" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Edit" asp-route-id="@item.FlightId" class="btn btn-warning btn-sm">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.FlightId" class="btn btn-danger btn-sm">Delete</a>
+                            <a asp-action="Details" asp-controller="Plane" asp-route-id="@item.PlaneId" class="btn btn-info btn-sm">Plane Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

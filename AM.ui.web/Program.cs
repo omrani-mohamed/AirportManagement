@@ -1,18 +1,19 @@
-using AM.Application.Core.Interfaces;
-using AM.Application.Core.Services;
 using AM.ApplicationCore.Interfaces;
+using AM.ApplicationCore.services;
 using AM.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<DbContext, AMContext>();
+//dependency injection
+builder.Services.AddDbContext<DbContext, AMContextcs>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IServiceFlight, ServiceFlight>();
 builder.Services.AddScoped<IServicePlane, ServicePlane>();
-builder.Services.AddSingleton<Type>(t=>typeof(GenericRepository<>));
+builder.Services.AddScoped<IServiceFlight, ServiceFlight>();
+builder.Services.AddScoped<IServicePassenger, ServicePassenger>();
+builder.Services.AddSingleton<Type>(t => typeof(GenericRepository<>));
 
 var app = builder.Build();
 
@@ -23,6 +24,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

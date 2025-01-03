@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\AM.ui.web.csproj": {}
+    "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\AM.UI.WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj": {
+    "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj",
-        "projectName": "AM.Application.Core",
-        "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
+        "projectName": "AM.ApplicationCore",
+        "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
         "packagesPath": "C:\\Users\\MOHAMED AMINE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\obj\\",
+        "outputPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MOHAMED AMINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
+    "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
         "projectName": "AM.Infrastructure",
-        "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\MOHAMED AMINE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MOHAMED AMINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj": {
-                "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj"
+              "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\AM.ui.web.csproj": {
+    "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\AM.UI.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\AM.ui.web.csproj",
-        "projectName": "AM.ui.web",
-        "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\AM.ui.web.csproj",
+        "projectUniqueName": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\AM.UI.WEB.csproj",
+        "projectName": "AM.UI.WEB",
+        "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\AM.UI.WEB.csproj",
         "packagesPath": "C:\\Users\\MOHAMED AMINE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\obj\\",
+        "outputPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MOHAMED AMINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,11 +181,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj": {
-                "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Application.Core\\AM.Application.Core.csproj"
+              "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj"
               },
-              "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj"
+              "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.Infrastructure\\AM.Infrastructure.csproj"
               }
             }
           }

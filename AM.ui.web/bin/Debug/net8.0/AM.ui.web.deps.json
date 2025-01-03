@@ -6,9 +6,9 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "AM.ui.web/1.0.0": {
+      "AM.UI.WEB/1.0.0": {
         "dependencies": {
-          "AM.Application.Core": "1.0.0",
+          "AM.ApplicationCore": "1.0.0",
           "AM.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.Design": "8.0.8",
@@ -17,7 +17,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
         },
         "runtime": {
-          "AM.ui.web.dll": {}
+          "AM.UI.WEB.dll": {}
         }
       },
       "Azure.Core/1.35.0": {
@@ -1898,12 +1898,12 @@
           }
         }
       },
-      "AM.Application.Core/1.0.0": {
+      "AM.ApplicationCore/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.8"
         },
         "runtime": {
-          "AM.Application.Core.dll": {
+          "AM.ApplicationCore.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1911,7 +1911,7 @@
       },
       "AM.Infrastructure/1.0.0": {
         "dependencies": {
-          "AM.Application.Core": "1.0.0",
+          "AM.ApplicationCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
@@ -1926,7 +1926,7 @@
     }
   },
   "libraries": {
-    "AM.ui.web/1.0.0": {
+    "AM.UI.WEB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3051,7 +3051,7 @@
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
-    "AM.Application.Core/1.0.0": {
+    "AM.ApplicationCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

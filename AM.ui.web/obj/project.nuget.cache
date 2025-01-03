@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z8STm3ZdWCs=",
+  "dgSpecHash": "7bEW3h5/hJU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MOHAMED AMINE\\OneDrive - ESPRIT\\Documents\\C# scripts\\AirportManagement\\AM.ui.web\\AM.ui.web.csproj",
+  "projectFilePath": "C:\\Users\\MOHAMED AMINE\\Downloads\\Compressed\\AirportManagement\\AM.UI.WEB\\AM.UI.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MOHAMED AMINE\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\MOHAMED AMINE\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

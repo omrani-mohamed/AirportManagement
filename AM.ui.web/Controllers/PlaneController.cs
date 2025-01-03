@@ -1,13 +1,13 @@
-﻿using AM.Application.Core.Domain;
-using AM.Application.Core.Interfaces;
+﻿using AM.ApplicationCore.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using AM.ApplicationCore.Domain;
 
-namespace AM.ui.web.Controllers
+namespace AM.UI.WEB.Controllers
 {
     public class PlaneController : Controller
     {
-        IServicePlane _planeService;
+        private readonly IServicePlane _planeService;
         public PlaneController(IServicePlane planeService)
         {
             _planeService = planeService;
@@ -23,43 +23,57 @@ namespace AM.ui.web.Controllers
         {
             return View(_planeService.GetById(id));
         }
-
-        // GET: PlaneController/Create
         public ActionResult Create()
         {
-            return View();
+           return View();
+            
         }
-
-        // POST: PlaneController/Create
+        // GET: PlaneController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Plane plane)
+        public ActionResult Create(Plane plane )
         {
             try
             {
                 _planeService.Add(plane);
                 _planeService.Commit();
                 return RedirectToAction(nameof(Index));
-            }
-            catch
+            }catch
             {
                 return View();
             }
         }
 
+        //// POST: PlaneController/Create
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
+
         // GET: PlaneController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(_planeService.GetById(id));
         }
 
         // POST: PlaneController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(Plane plane)
         {
             try
             {
+                _planeService.Update(plane);
+                _planeService.Commit();
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -71,20 +85,49 @@ namespace AM.ui.web.Controllers
         // GET: PlaneController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_planeService.GetById(id));
         }
 
         // POST: PlaneController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        /* public ActionResult Delete(Plane plane)
+         {
+             try
+             {
+                 _planeService.Delete(plane);
+                 _planeService.Commit();
+                 return RedirectToAction(nameof(Index));
+             }
+             catch
+             {
+                 return View();
+             }
+         }*/
         public ActionResult Delete(int id, IFormCollection collection)
         {
             try
             {
+                // Récupération de l'entité à partir de l'id
+                var plane = _planeService.GetById(id);
+
+                if (plane == null)
+                {
+                    // Si l'entité n'existe pas, rediriger vers une erreur ou une page adaptée
+                    return NotFound();
+                }
+
+                // Suppression de l'entité
+                _planeService.Delete(plane);
+                _planeService.Commit();
+
+                // Rediriger vers la liste des entités après suppression
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                // Gérer les erreurs (par exemple, en les journalisant)
+                ModelState.AddModelError("", "Une erreur s'est produite lors de la suppression.");
                 return View();
             }
         }

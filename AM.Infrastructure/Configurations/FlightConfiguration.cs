@@ -1,4 +1,4 @@
-﻿using AM.Application.Core.Domain;
+﻿using AM.ApplicationCore.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -13,14 +13,8 @@ namespace AM.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Flight> builder)
         {
-            //builder.HasMany(f => f.Passengers)
-            //       .WithMany(p => p.Flights)
-            //       .UsingEntity("Reservation");
-            //     .UsingEntity(j => j.ToTable("FlightPassengers"));
-            builder.HasOne(f => f.MyPlane)
-                   .WithMany(p => p.Flights)
-                   .HasForeignKey(f => f.PlaneId);
+         //builder.HasMany(f=>f.Passengers).WithMany(p => p.Flights).UsingEntity("Reservation");
+         builder.HasOne(f => f.MyPlane).WithMany(p=>p.Flights).HasForeignKey(f=>f.PlaneId);
         }
-
     }
 }

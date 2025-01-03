@@ -1,11 +1,13 @@
-﻿using AM.Application.Core.Domain;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using Plane = AM.ApplicationCore.Domain.Plane;
 
 namespace AM.Infrastructure.Configurations
 {
@@ -13,9 +15,10 @@ namespace AM.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Plane> builder)
         {
-            builder.HasKey(p=> p.PlaneId);
+           builder.HasKey(p => p.PlaneId);
             builder.ToTable("MyPlanes");
-            builder.Property(p => p.Capacity).HasColumnName("PlaneCapacity");
+            builder.Property(p=>p.capacity).HasColumnName("PlaneCapacity");
+
 
         }
     }

@@ -21,6 +21,10 @@ namespace AM.Infrastructure
             repositoryType = type;
         }
 
+        public UnitOfWork()
+        {
+        }
+
         public IGenericRepository<T> Repository<T>() where T : class
         {
             return (IGenericRepository<T>)Activator.CreateInstance(repositoryType
