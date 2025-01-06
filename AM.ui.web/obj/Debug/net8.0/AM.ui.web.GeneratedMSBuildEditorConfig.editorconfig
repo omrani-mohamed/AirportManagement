@@ -17,79 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AM.UI.WEB
 build_property.RootNamespace = AM.UI.WEB
-build_property.ProjectDir = C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.UI.WEB\
+build_property.ProjectDir = C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.UI.WEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.UI.WEB
+build_property.MSBuildProjectDirectory = C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.UI.WEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Flight/Create.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Flight/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Flight/Delete.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Flight/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Flight/Details.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Flight/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Flight/Edit.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Flight/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Flight/Index.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Flight/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Home/Index.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Home/Privacy.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Plane/Create.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Plane/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Plane/Delete.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Plane/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Plane/Details.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Plane/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Plane/Edit.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Plane/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Plane/Index.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Plane/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Shared/Error.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/_ViewImports.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/_ViewStart.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MOHAMED AMINE/Downloads/Compressed/AirportManagement/AM.UI.WEB/Views/Shared/_Layout.cshtml]
+[C:/Users/MOHAMED AMINE/OneDrive - ESPRIT/Documents/C\# scripts/AirportManagement/AM.UI.WEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vz5kwzpl2k

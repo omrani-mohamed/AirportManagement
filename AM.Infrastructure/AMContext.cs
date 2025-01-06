@@ -9,7 +9,7 @@ using AM.Infrastructure.Configurations;
 
 namespace AM.Infrastructure
 {
-    public class AMContextcs : DbContext
+    public class AMContext : DbContext
     {
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -46,7 +46,6 @@ namespace AM.Infrastructure
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<Traveller> Travellers { get; set; }
         public DbSet<Plane> Planes { get; set; }
-
         public DbSet<Staff> Staff { get; set; }
     }
 }

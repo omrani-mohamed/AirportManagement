@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AM.Infrastructure.Migrations
 {
-    [DbContext(typeof(AMContextcs))]
+    [DbContext(typeof(AMContext))]
     [Migration("20241215143101_project")]
     partial class project
     {

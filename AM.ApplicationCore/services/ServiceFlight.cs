@@ -4,38 +4,47 @@ using AM.ApplicationCore.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AM.ApplicationCore.services
+namespace AM.ApplicationCore.Services
 {
     public class ServiceFlight : Service<Flight>, IServiceFlight
     {
-        IUnitOfWork unitOfWork;
-        public ServiceFlight(IUnitOfWork unitOfWork) : base(unitOfWork)
+        public ServiceFlight(IUnitOfWork unitOfWork) : base(unitOfWork) { }
+        public IList<Staff> GetStaff(int id)
         {
-            this.unitOfWork = unitOfWork;
+            return GetById(id).Tickets
+                .Select(t => t.MyPassenger)
+                .OfType<Staff>()
+                .ToList();
         }
-
-        public IList<Staff> GetStaffs(int id)
+        public IList<Traveller> GetTravellers(Plane plane, DateTime date)
         {
-            return unitOfWork.Repository<Flight>().GetById(id).Tickets.
-                Select(t => t.MyPassenger).OfType<Staff>().ToList();
-
+            return plane.Flights.Where(f => f.FlightDate == date)
+                .SelectMany(f => f.Tickets)
+                .Select(t => t.MyPassenger)
+                .OfType<Traveller>()
+                .ToList();
         }
-
-        public IList<Traveller> GetTravellers(Domain.Plane plane, DateTime date)
+        public void DispalyNbrPassenger(DateTime startDate, DateTime endDate)
         {
-            return plane.Flights.Where(f => f.FlightDate==date).
-                SelectMany(f=>f.Tickets).Select(t=>t.MyPassenger).OfType<Traveller>().ToList();
-        }
+            var query = GetMany(f => f.FlightDate >= startDate
+            && f.FlightDate <= endDate)
+                .SelectMany(f => f.Tickets)
+                .GroupBy(t => t.MyFlight.FlightDate)
+                .Select(t => new { group = t.Key, count = t.Count() });
 
+            foreach (var item in query)
+            {
+                Console.WriteLine("Date Vol = " + item.group
+                    + " Nb Passenger = " + item.count);
+            }
+        }
         public IEnumerable<Flight> SortFlights()
         {
             return GetAll().OrderByDescending(f => f.FlightDate);
         }
-
-
     }
 }
+

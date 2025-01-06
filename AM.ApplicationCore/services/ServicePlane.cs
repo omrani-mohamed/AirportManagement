@@ -7,49 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AM.ApplicationCore.services
+namespace AM.ApplicationCore.Services
 {
-    
     public class ServicePlane : Service<Plane>, IServicePlane
-        
     {
         IUnitOfWork unitOfWork;
-        public ServicePlane(IUnitOfWork unitOfWork) : base(unitOfWork)
+        public ServicePlane(IUnitOfWork unityOfWork) : base(unityOfWork)
         {
-            this.unitOfWork = unitOfWork;
+            this.unitOfWork = unityOfWork;
         }
-
         public IList<Passenger> GetPassengers(Plane plane)
         {
-            return unitOfWork.Repository<Plane>().GetById(plane.PlaneId).Flights
-                .SelectMany(f=>f.Tickets.Select(t=>t.MyPassenger)).ToList();
+            return unitOfWork.Repository<Plane>().GetById(plane.PlaneId)
+                .Flights.SelectMany(f => f.Tickets.Select(t => t.MyPassenger))
+                .ToList();
         }
 
         public IList<Flight> GetFlights(int n)
         {
-         return GetAll().OrderByDescending(p=>p.PlaneId).Take(n).SelectMany(p=>p.Flights).OrderBy(f=>f.FlightDate).ToList();  
+            return GetAll().OrderByDescending(p => p.PlaneId).Take(n).
+                SelectMany(p => p.Flights).OrderBy(f => f.FlightDate)
+               .ToList();
         }
-
-        public bool IsFlighths(int n, Flight flight)
+        public bool AvailablePlane(int n, Flight flight)
         {
-           int capacity= flight.MyPlane.capacity;
-            int nbrePlace = flight.Tickets.Count;
-            return capacity-nbrePlace >= n;
-
+            int capacity = flight.MyPlane.Capacity;
+            int nbrPlace = flight.Tickets.Count;
+            return (capacity - nbrPlace) >= n;
         }
-
         public void DeleteOldPlanes()
         {
-            var oldPlanes = GetMany(p=> p.ManufactureDate.Year-DateTime.Now.Year>10).ToList();
-            foreach (var plane in oldPlanes)
+            foreach (Plane plane in GetMany(p => DateTime.Now.Year - p.ManufactureDate.Year > 10))
             {
-               Delete(plane);
+                Delete(plane);
             }
-            unitOfWork.Save();
         }
-
-       
-
-
     }
 }
+

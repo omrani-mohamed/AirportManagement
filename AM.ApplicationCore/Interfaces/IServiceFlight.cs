@@ -1,4 +1,5 @@
 ﻿using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,9 @@ namespace AM.ApplicationCore.Interfaces
 {
     public interface IServiceFlight : IService<Flight>
     {
-        IList<Staff> GetStaffs(int id);
-        IList<Traveller> GetTravellers(Plane plane , DateTime date);
-         IEnumerable<Flight> SortFlights();
-
-
+        IList<Staff> GetStaff(int id);
+        IList<Traveller> GetTravellers(Plane plane, DateTime date);
+        public void DispalyNbrPassenger(DateTime startDate, DateTime endDate);
+        public IEnumerable<Flight> SortFlights();
     }
 }

@@ -54,7 +54,7 @@
                     <th>@Html.DisplayNameFor(model => model.EffectiveArrival)</th>
                     <th>@Html.DisplayNameFor(model => model.EstimatedDuration)</th>
                     <th>@Html.DisplayNameFor(model => model.PlaneId)</th>
-                    <th>@Html.DisplayNameFor(model => model.Pilote)</th>
+                    <th>@Html.DisplayNameFor(model => model.Pilot)</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -87,7 +87,7 @@
                             @Html.DisplayFor(modelItem => item.PlaneId)
                         </td>
                         <td>
-                            <img src="~/uploads/@item.Pilote" alt="Pilot" class="rounded-circle" width="50" height="50" />
+                            <img src="~/uploads/@item.Pilot" alt="Pilot" class="rounded-circle" width="50" height="50" />
                         </td>
                         <td>
                             <a asp-action="Details" asp-route-id="@item.FlightId" class="btn btn-info btn-sm">Details</a>

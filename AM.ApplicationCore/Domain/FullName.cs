@@ -11,10 +11,14 @@ namespace AM.ApplicationCore.Domain
     [Owned]
     public class FullName
     {
+        [MinLength(3, ErrorMessage = "longeur minimale 3 caracteres")]
+        [MaxLength(25, ErrorMessage = "longeur maximale 25 caractere")]
+        public String? FirstName { get; set; }
 
-        [MinLength(3, ErrorMessage = "longeure minimale = 3")]
-        [MaxLength(25, ErrorMessage = "longeure maximale = 25")]
-        public string FirstName { get; set;}
-        public string LastName { get; set; }
+        [MinLength(3, ErrorMessage = "longeur minimale 3 caracteres")]
+        [MaxLength(25, ErrorMessage = "longeur maximale 25 caractere")]
+        public String? LastName { get; set; }
+
     }
 }
+

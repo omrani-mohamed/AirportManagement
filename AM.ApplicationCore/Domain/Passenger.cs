@@ -1,66 +1,68 @@
-﻿using System;
+﻿using AM.ApplicationCore.Domain;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using AM.ApplicationCore.services;
+
 namespace AM.ApplicationCore.Domain
 {
     public class Passenger
     {
         //public int Id { get; set; }
-        [Display(Name = "Date of bearth ")]
-        [DataType(DataType.Date)]
+        [Display(Name = "Date of birth")]
+        [DataType(DataType.DateTime)]
         public DateTime BirthDate { get; set; }
-        [Key, StringLength(7)]
+
+        [Key]
+        [StringLength(7, ErrorMessage = "Passport number must be 7 characters.")]
         public string PassportNumber { get; set; }
+
         [DataType(DataType.EmailAddress)]
-        //[EmailAddress]
-        public string EmailAdress { get; set; }
-        
-         public FullName FullName { get; set; }
+        public string? EmailAddress { get; set; }
 
-        [RegularExpression(@"^(\d{8})$", ErrorMessage = "Invalid Phone number")]
-        public string TelNumber { get; set; }
-        public virtual  ICollection<Ticket> Tickets { get; set; }
-        //public ICollection<Flight> Flights { get; set; }
+        public FullName FullName { get; set; }
 
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^[0-9]{8}$", ErrorMessage = "TelNumber must contain exactly 8 digits.")]
+        public string? TelNumber { get; set; }
+        //public ICollection<Flight>? Flights { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
         public override string ToString()
         {
-            return "First Name"+this.FullName.FirstName+"Last Name"+this.FullName.LastName;
-        }
-        //10
-
-        public bool CheckProfile(string firstName, string lastName)
-        {
-            return this.FullName.FirstName == firstName && this.FullName.LastName == lastName;
+            return "FirstName :" + this.FullName.FirstName + " LastName : " + this.FullName.LastName + " BirthDate : " + this.BirthDate + " TelNumber : " + this.TelNumber;
         }
 
-     /*  public bool CheckProfile(string firstName, string lastName,String email)
+        //public bool CheckProfile(string firstName, string lastName)
+        //{
+        //    return this.FirstName.Equals(firstName) && this.LastName.Equals(lastName);
+        //}
+
+        //public bool CheckProfile(string firstName, string lastName, string email)
+        //{
+        //    return this.FirstName == firstName && this.LastName == lastName && this.EmailAddress == email;
+        //}
+
+        public bool CheckProfile(string firstName, string lastName, string email = null)
         {
-            return this.FirstName == firstName && this.LastName == lastName&&this.EmailAdress==email;
-        }*/
-        public bool CheckProfile(string firstName, string lastName, String email=null)
-        {
-            if(email == null)
+            if (email != null)
+            {
+                return this.FullName.FirstName == firstName && this.FullName.LastName == lastName && this.EmailAddress == email;
+            }
+            else
             {
                 return this.FullName.FirstName == firstName && this.FullName.LastName == lastName;
             }
-            return this.FullName.FirstName == firstName && this.FullName.LastName == lastName && this.EmailAdress == email;
         }
 
-
-
-        //11
-
-
-        public virtual void PassengerType()
+        public virtual string PassengerType()
         {
-            System.Console.WriteLine("I am a passenger");
+            return "I am a passenger";
         }
 
-
-       
     }
 }
+

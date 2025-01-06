@@ -58,7 +58,7 @@ namespace AM.UI.WEB.Controllers
                     "wwwroot", "uploads", PilotImage.FileName);
                     Stream stream = new FileStream(path, FileMode.Create);
                     PilotImage.CopyTo(stream);
-                    flight.Pilote = PilotImage.FileName;
+                    flight.Pilot = PilotImage.FileName;
                 }
                 _flightService.Add(flight);
                 _flightService.Commit();
@@ -89,7 +89,7 @@ namespace AM.UI.WEB.Controllers
                     "wwwroot", "uploads", PilotImage.FileName);
                     Stream stream = new FileStream(path, FileMode.Create);
                     PilotImage.CopyTo(stream);
-                    flight.Pilote = PilotImage.FileName;
+                    flight.Pilot = PilotImage.FileName;
                 }
                 _flightService.Update(flight);
                 _flightService.Commit();

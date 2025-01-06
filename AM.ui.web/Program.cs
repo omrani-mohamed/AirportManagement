@@ -1,5 +1,6 @@
 using AM.ApplicationCore.Interfaces;
 using AM.ApplicationCore.services;
+using AM.ApplicationCore.Services;
 using AM.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 //dependency injection
-builder.Services.AddDbContext<DbContext, AMContextcs>();
+builder.Services.AddDbContext<DbContext, AMContext>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IServicePlane, ServicePlane>();
 builder.Services.AddScoped<IServiceFlight, ServiceFlight>();
+builder.Services.AddScoped<IServicePlane, ServicePlane>();
 builder.Services.AddScoped<IServicePassenger, ServicePassenger>();
 builder.Services.AddSingleton<Type>(t => typeof(GenericRepository<>));
 

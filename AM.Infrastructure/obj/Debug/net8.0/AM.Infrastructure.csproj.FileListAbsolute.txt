@@ -52,3 +52,21 @@ C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.Infrastructure\
 C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.pdb
 C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.genruntimeconfig.cache
 C:\Users\MOHAMED AMINE\Downloads\Compressed\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\ref\AM.Infrastructure.dll
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.Infrastructure.deps.json
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.Infrastructure.runtimeconfig.json
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.Infrastructure.dll
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.Infrastructure.pdb
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.ApplicationCore.dll
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\bin\Debug\net8.0\AM.ApplicationCore.pdb
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.AssemblyInfo.cs
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.sourcelink.json
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infra.6BD442B8.Up2Date
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.dll
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\refint\AM.Infrastructure.dll
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.pdb
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\AM.Infrastructure.genruntimeconfig.cache
+C:\Users\MOHAMED AMINE\OneDrive - ESPRIT\Documents\C# scripts\AirportManagement\AM.Infrastructure\obj\Debug\net8.0\ref\AM.Infrastructure.dll

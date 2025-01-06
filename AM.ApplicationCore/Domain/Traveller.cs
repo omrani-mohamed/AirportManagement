@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AM.ApplicationCore.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +14,16 @@ namespace AM.ApplicationCore.Domain
 
         public override string ToString()
         {
-            return base.ToString()+" health information "+this.HealthInformation+"nationality"+this.Nationality;
+            return base.ToString() + "HealthInformation : " + this + HealthInformation + "Nationality : " + this.Nationality;
+
         }
 
-        public override void PassengerType()
+        public override string PassengerType()
         {
-            base.PassengerType();
-            System.Console.WriteLine("I am a traveller");
+            return base.PassengerType() + ", I am a Traveller";
         }
+
 
     }
-    
-
 }
+
